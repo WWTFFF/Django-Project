@@ -1,6 +1,5 @@
 from django.conf import settings
 import pandas as pd
-import numpy as np
 
 
 def recommend_product(weather_list):
@@ -23,7 +22,7 @@ def recommend_product(weather_list):
         print(weather_list)
         print('예측 판매량', predict_value)
 
-        if avg_value<= predict_value:
-            result.append(product)
+        if avg_value <= predict_value:
+            result.append(settings.PRODUCT_DICT[product])
 
     return result

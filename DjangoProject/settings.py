@@ -119,6 +119,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # 상품 목록
 PRODUCT_LIST = ["water_parsley", "strawberry", "grape", "watermelon"]
+PRODUCT_LIST_IN_KOREA = ["미나리", "딸기", "포도", "수박"]
+
+# 상품 목록 한글
+PRODUCT_DICT = dict()
+for i in range(len(PRODUCT_LIST)):
+    PRODUCT_DICT[PRODUCT_LIST[i]] = PRODUCT_LIST_IN_KOREA[i]
 
 # 머신러닝 호출
 PRODUCT_MODEL_DICT = dict()
