@@ -13,7 +13,7 @@ def get_recommended_products(request):
     result = []
     recommend_product_list = recommend_product(get_weather())
 
-    recommend_product_list = ["딸기", "수박"]
+    # recommend_product_list = ["딸기", "수박"]
 
     # 키워드로 검색
     # 경로 설정
